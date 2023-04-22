@@ -1,0 +1,35 @@
+.theUsestateHook {
+  margin: 0;
+}
+.theUsestateHookContainer {
+  flex: 1;
+  position: relative;
+}
+.messagewrapper,
+.replywrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+.messagewrapper {
+  flex: 1;
+  border-radius: 0 26px 26px 26px;
+  background-color: #d6f5ff;
+  justify-content: flex-end;
+}
+.replywrapper {
+  box-sizing: border-box;
+  justify-content: flex-start;
+  max-width: 70vh;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+}
+@media screen and (max-width: 960px) {
+  .replywrapper {
+    max-width: 800px;
+  }
+}

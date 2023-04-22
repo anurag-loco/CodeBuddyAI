@@ -1,0 +1,106 @@
+.checkBug,
+.input {
+  font-size: 24px;
+  font-family: Inter;
+}
+.input {
+  border: 1px solid #e2e2e2;
+  background-color: transparent;
+  align-self: stretch;
+  flex: 1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkBug {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.btnbug {
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  background-color: #284692;
+  align-self: stretch;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.explain {
+  flex: 1;
+  position: relative;
+  font-size: 24px;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+}
+.btnexplain,
+.buttonwrapper,
+.inputwrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btnexplain {
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  background-color: #3380f2;
+  border-radius: 14px;
+  align-items: center;
+}
+.buttonwrapper,
+.inputwrapper {
+  align-items: flex-end;
+  gap: 10px;
+}
+.inputwrapper {
+  background-color: #fff;
+  padding: 0 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+@media screen and (max-width: 420px) {
+  .checkBug,
+  .explain {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .buttonwrapper {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .input {
+    flex: unset;
+    align-self: stretch;
+  }
+  .btnbug,
+  .btnexplain,
+  .buttonwrapper {
+    flex: 1;
+    height: auto;
+  }
+  .buttonwrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputwrapper {
+    flex-direction: column;
+  }
+}

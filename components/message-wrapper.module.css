@@ -1,0 +1,33 @@
+.explainThisCode {
+  margin: 0;
+}
+.explainThisCodeContainer {
+  position: relative;
+  white-space: pre-wrap;
+}
+.messagewrapper,
+.messagewrapper1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.messagewrapper1 {
+  border-radius: 26px 0 26px 26px;
+  background-color: #e1edff;
+  box-sizing: border-box;
+  max-width: 70vh;
+}
+.messagewrapper {
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+}
+@media screen and (max-width: 960px) {
+  .messagewrapper1 {
+    max-width: 800px;
+  }
+}

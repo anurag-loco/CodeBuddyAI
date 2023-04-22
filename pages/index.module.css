@@ -1,0 +1,105 @@
+.logo1Icon {
+  position: relative;
+  width: 53.5px;
+  height: 53.5px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.code {
+  color: #43bad4;
+}
+.buddy {
+  color: #000;
+}
+.codebuddy {
+  position: relative;
+  font-size: 36px;
+  font-family: Inter;
+  text-align: left;
+}
+.logo,
+.navigationBar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  flex: 1;
+  gap: 10px;
+}
+.navigationBar {
+  background-color: #fff;
+  height: 108px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.thereDoNot {
+  margin: 0;
+}
+.thereDoNotContainer {
+  flex: 1;
+  position: relative;
+}
+.messagewrapper,
+.replywrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+.messagewrapper {
+  flex: 1;
+  border-radius: 0 26px 26px 26px;
+  background-color: #d6f5ff;
+  justify-content: flex-end;
+}
+.replywrapper {
+  box-sizing: border-box;
+  justify-content: flex-start;
+  max-width: 70vh;
+}
+.chatscreen,
+.chatwrapper,
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chatwrapper {
+  align-self: stretch;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: 14px;
+  overflow-y: scroll;
+}
+.chatscreen,
+.main {
+  background-color: #fff;
+}
+.chatscreen {
+  align-self: stretch;
+  flex: 1;
+  padding: 10px;
+  justify-content: space-between;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 1350px;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+}
+@media screen and (max-width: 960px) {
+  .replywrapper {
+    max-width: 800px;
+  }
+}
